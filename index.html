@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-tac-toe-game</title>
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <header>Tic-tac-toe-game</header>
+            <div class="alert-choice">
+                <div class="getdata">
+                    <span>Choose your symbol:</span>
+                    <select class="playerChoice" id="">
+                        <option value="X" selected>X</option>
+                        <option value="O">O</option>
+                    </select>
+                </div>
+                <div class="getdata">
+                    <span>Choose who start:</span>
+                    <select class="playerStart" id="">
+                        <option value="user" selected>You</option>
+                        <option value="computer">Computer</option>
+                    </select>
+                </div>
+                <button class="start">Start</button>
+            </div>
+            <div class="board">
+                <div class="game-board">
+                    <table>
+                        <tr>
+                            <td class="first-col-1 cell" cellIndex="0"></td>
+                            <td class="second-col-1 cell" cellIndex="1"></td>
+                            <td class="third-col-1 cell" cellIndex="2"></td>
+                        </tr>
+                        <tr>
+                            <td class="first-col-2 cell" cellIndex="3"></td>
+                            <td class="second-col-2 cell" cellIndex="4"></td>
+                            <td class="third-col-2 cell" cellIndex="5"></td>
+                        </tr>
+                        <tr>
+                            <td class="first-col-3 cell" cellIndex="6"></td>
+                            <td class="second-col-3 cell" cellIndex="7"></td>
+                            <td class="third-col-3 cell" cellIndex="8"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="info">
+                    <div class="status">
+                        Status: <span class="statusText values"></span>
+                    </div>
+                    <div class="score">
+                        Your score: <span class="values">0</span>
+                    </div>
+                    <div class="computer-score">
+                        Computer score: <span class="values">0</span>
+                    </div>
+                     <button class="play">Play</button>
+                     <button class="restart">Restart</button>
+                </div>
+
+            </div>
+        </div>
+    </section> 
+    <script src="main.js"></script>
+</body>
+</html>
